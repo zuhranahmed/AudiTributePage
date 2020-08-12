@@ -1,0 +1,150 @@
+/* Media Queries */
+
+@media (max-width: 768px) {
+  #showcase {
+    height: 70vh;
+  }
+  #about.about-info {
+    grid-template-columns: 1fr;
+  }
+  .about-img {
+    display: none;
+  }
+
+  .favorite-cars .car-heading {
+    font-size: 1rem;
+  }
+  .favorite-car {
+    height: 400px;
+  }
+  .favorite-car .car-img img {
+    height: 100%;
+  }
+  .car-text div h2 {
+    font-size: 1.2rem;
+  }
+  .car-text div h2 span {
+    font-size: 1.4rem;
+  }
+  .car-text p {
+    line-height: 1.2;
+  }
+  .down-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  #showcase {
+    height: 70vh;
+  }
+  #about.about-info {
+    grid-template-columns: 1fr;
+  }
+  .about-img {
+    display: none;
+  }
+
+  .favorite-cars .car-heading {
+    font-size: 1rem;
+  }
+
+  .car-text div h2 {
+    font-size: 1.2rem;
+  }
+  .down-btn {
+    display: none;
+  }
+  .favorite-car {
+    height: 500px;
+  }
+  .favorite-car .car-img img {
+    height: 100%;
+  }
+  .car-text div h2 span {
+    font-size: 1.4rem;
+  }
+}
+
+/* For Mobile Phones */
+
+@media (max-width: 500px) {
+  #showcase {
+    background-attachment: scroll;
+    padding: 1rem;
+  }
+  #showcase .navbar {
+    flex-direction: column;
+  }
+  #showcase .navbar .logo {
+    margin-bottom: 0.5rem;
+  }
+  .showcase-text {
+    font-size: 1.5rem;
+    text-align: center;
+    top: 50%;
+  }
+  #about {
+    padding: 1rem;
+  }
+  .about-txt div h2 {
+    font-size: 1rem;
+  }
+  .about-txt div h2 span {
+    font-family: "Caveat", cursive;
+    font-size: 1.2rem;
+  }
+  .favorite-cars .car-heading {
+    padding: 1rem;
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .favorite-cars .car-heading span {
+    font-family: "Caveat", cursive;
+    font-size: 1rem;
+  }
+  .favorite-car {
+    grid-template-columns: 1fr;
+  }
+  .favorite-car:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .car-text div h2 {
+    font-size: 0.6rem;
+  }
+  .car-text div h2 span {
+    font-family: "Caveat", cursive;
+    font-size: 1rem;
+  }
+  .car-text p {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .car-text div {
+    padding-bottom: 0.5rem;
+  }
+  .favorite-car .car-img img {
+    height: 100%;
+  }
+  .favorite-car {
+    height: 450px;
+  }
+
+  .more {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    padding: 1rem;
+    height: 150px;
+    grid-template-columns: 1fr;
+  }
+  footer div:last-child i {
+    font-size: small;
+    padding: 0 5px;
+  }
+  footer div:first-child {
+    text-align: center;
+  }
+}

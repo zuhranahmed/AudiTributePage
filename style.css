@@ -1,0 +1,254 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+/* Buttons */
+.about-btn {
+  display: inline-block;
+  color: #ccc;
+  transition: all 0.4s;
+}
+.about-btn:hover {
+  border-radius: 30px;
+  padding: 2.5px 10px;
+  margin-left: 3px;
+  background-color: #fff;
+  color: #333;
+}
+/* .about-btn {
+  display: inline-block;
+  padding: 2.5px 10px;
+  margin-left: 3px;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 30px;
+  transition: all 0.4s;
+}
+.about-btn:hover {
+  background-color: #ccc;
+} */
+
+/* Showcase Styling */
+
+#showcase {
+  height: 100vh;
+  width: 100%;
+  padding: 1.5rem;
+  overflow: hidden;
+  background: url("images/showcase.jpg") no-repeat center center/cover;
+  position: relative;
+  color: #ccc;
+  background-attachment: fixed;
+}
+#showcase .logo a {
+  transition: all 0.4s;
+}
+#showcase .logo a:hover {
+  color: #fff;
+}
+#showcase .navbar .nav-items ul li a {
+  transition: all 0.4s;
+}
+#showcase .navbar .nav-items ul li a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/* Navbar Styling */
+
+#showcase .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#showcase .navbar .nav-items ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#showcase .navbar .logo {
+  font-size: 1.4rem;
+}
+#showcase .navbar .nav-items ul li {
+  text-align: center;
+  font-weight: 600;
+}
+#showcase .navbar .nav-items ul li:first-child,
+#showcase .navbar .nav-items ul li:nth-child(2) {
+  padding-right: 1.8rem;
+}
+
+/* showcase text */
+.showcase-text {
+  font-family: "Caveat", cursive;
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+}
+.showcase-text p {
+  font-size: 18px;
+}
+
+/* down arrow */
+.down-btn {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+}
+.wrapper i {
+  transition: all 0.4s;
+}
+.wrapper i:hover {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* About Styling */
+#about {
+  padding: 1.5rem;
+  background: #333;
+  color: #f4f4f4;
+}
+#about.about-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+.about-txt div {
+  padding-bottom: 1rem;
+}
+.about-txt div h2 {
+  font-size: 2.4rem;
+}
+.about-txt p {
+  line-height: 1.6;
+}
+.about-txt p strong {
+  letter-spacing: 1px;
+}
+.more {
+  margin-top: 1rem;
+}
+
+.about-txt div h2 span {
+  font-family: "Caveat", cursive;
+  font-size: 2.8rem;
+}
+
+/* Cars Styling */
+#cars {
+  padding: 1.5rem;
+  background-color: #f4f4f4;
+}
+.favorite-cars .car-heading {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+}
+.favorite-cars .car-heading span {
+  font-family: "Caveat", cursive;
+  font-size: 3rem;
+}
+
+/* Favorite car grid styling */
+
+.favorite-car {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.favorite-car .car-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #333;
+}
+.favorite-car .car-text:nth-child(2) {
+  padding-left: 1.5rem;
+}
+.favorite-car .car-img img {
+  height: 600px;
+}
+.car-text div {
+  padding-bottom: 1rem;
+}
+.car-text div h2 {
+  font-size: 2.4rem;
+}
+.car-text p {
+  line-height: 1.6;
+}
+.car-text p strong {
+  letter-spacing: 1px;
+}
+
+.car-text div h2 span {
+  font-family: "Caveat", cursive;
+  font-size: 2.8rem;
+}
+
+/* footer styling */
+footer {
+  padding: 1.5rem;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 14px;
+  background-color: #333;
+  color: #f4f4f4;
+}
+footer div:last-child i {
+  color: #f4f4f4;
+  font-size: large;
+  padding: 0 5px;
+}
+footer div:last-child i:hover {
+  color: #ccc;
+}
+footer div:last-child {
+  justify-self: end;
+  text-align: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+footer div:first-child {
+  opacity: 0.7;
+}
+
+footer div:first-child i:hover {
+  color: #ccc;
+}
